@@ -13,7 +13,7 @@
 
             h1 {
                 font-size: 48px;
-                color: yellow !important;  
+                color: yellow;  
             }
 
             .centered {
@@ -55,7 +55,6 @@
             .eil3col-2 {
                 display:flex;
                 flex-direction: column;
-                width: 30%;
             }
 
             .eil4col {
@@ -81,10 +80,6 @@
                 color: grey;
             }
 
-            .col {
-                float:left;
-            }
-
             .pirma {
                 background-color: grey;
             }
@@ -92,9 +87,7 @@
             .antra {
                 background-color: rgb(0, 255, 21);
             }
-            #picktext {
-                float:inline-end;
-            }
+
             .symbols {
                 list-style: none;
             }
@@ -105,7 +98,7 @@
 
     <body>
 
-        <div class='bodyclass'>
+        <div class='bodyclass clearfix'>
 
             <div id='eilute-1'>
                 
@@ -183,7 +176,7 @@
                 <div class = 'eil3col col clearfix eil3col-2'>
 
                     <img src='img/trecias_paveikslelis.jpg' alt='trecias paveiksleis'>
-                    <span id='pictext'>Tekstas su zyma span</span>
+                    <span>Tekstas su zyma span</span>
 
                 </div>
 
