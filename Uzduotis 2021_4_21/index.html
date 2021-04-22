@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
     <head>
         
@@ -8,9 +10,10 @@
         <title>Pagrindinis GitHUb Pull</title>
         
         <style>
+
             h1 {
                 font-size: 48px;
-                color: yellow;  
+                color: yellow !important;  
             }
 
             .centered {
@@ -26,36 +29,37 @@
 
             .bodyclass {
                 width: 80vw;
-                display: block;
+                margin: auto;
+               /* display: block;
                 margin-left: auto;
-                margin-right: auto;
+                margin-right: auto; */
             }
 
-            .img {
+            img {
                 width: 250px;
                 height: 200px;
             }
 
             #eilute-1 {
-                width: 100vw;
+                width: 100%;
             }
 
             .eil2col {
                 width: 50%;
             }
 
-            #eil3col-1 {
+            .eil3col-1 {
                 width: 70%;
             }
 
-            #eil3col-2 {
+            .eil3col-2 {
                 display:flex;
                 flex-direction: column;
                 width: 30%;
             }
 
             .eil4col {
-                width: 33%;
+                width: 33.33%;
             }
 
             .clearfix {
@@ -91,12 +95,15 @@
             #picktext {
                 float:inline-end;
             }
+            .symbols {
+                list-style: none;
+            }
 
         </style>
 
     </head>
 
-    <body id='mainbody'>
+    <body>
 
         <div class='bodyclass'>
 
@@ -129,9 +136,9 @@
 
             </div>
 
-            <div id='eilute-2'>
+            <div id='eilute-2' class= 'clearfix'>
 
-                <div class= 'eil2col col clearfix'>
+                <div class= 'eil2col col'>
 
                     <h1 class='centered'>This is a Heading</h1>
                     <h2>This is a Heading</h2>
@@ -144,7 +151,7 @@
 
                 </div>
 
-                <div class= 'eil2col col clearfix' id='eil2col2'>
+                <div class= 'eil2col col'>
 
                     <p>Vivamus magna justo, lacinia eget consectetur sed, 
                     convallis at tellus. <br> Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
@@ -168,14 +175,14 @@
 
             <div id='3-eilute'>
 
-                <div class = 'eil3col col clearfix' id='eil3col-1'>
-                    <img class='img' src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2014%2F09%2Fgoogle-logo-1.png&f=1&nofb=1' alt='Pirmas paveiksliukas'>
-                    <img class='img' src='img/pirmas_paveiksliukas.jpg' alt='Antras paveiksliukas'>
+                <div class = 'eil3col col clearfix eil3col-1'>
+                    <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2014%2F09%2Fgoogle-logo-1.png&f=1&nofb=1' alt='Pirmas paveiksliukas'>
+                    <img src='img/pirmas_paveiksliukas.jpg' alt='Antras paveiksliukas'>
                 </div>
 
-                <div class = 'eil3col col clearfix' id='eil3col-2'>
+                <div class = 'eil3col col clearfix eil3col-2'>
 
-                    <img class='img' src='img/trecias_paveikslelis.jpg' alt='trecias paveiksleis'>
+                    <img src='img/trecias_paveikslelis.jpg' alt='trecias paveiksleis'>
                     <span id='pictext'>Tekstas su zyma span</span>
 
                 </div>
@@ -196,7 +203,7 @@
 
                 <div class = 'eil4col col clearfix'>
 
-                    <ol style='list-style: none;'>
+                    <ol class = 'symbols'>
 
                         <li>
                             <a href='https://google.lt' target='_blank'>Einame i Google Naujas Tab'as</a>
@@ -211,7 +218,7 @@
 
                 <div class = 'eil4col col clearfix'>
 
-                    <ul style='list-style: none'>
+                    <ul class = 'symbols'>
 
                         <li>Druska</li>
                         <li>Cukrus</li>
