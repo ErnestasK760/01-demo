@@ -11,17 +11,12 @@
         
         <style>
 
+
             h1 {
                 font-size: 48px;
-                color: yellow !important;  
+                color: yellow;  
             }
-
-            .centered {
-                margin-left: auto;
-                margin-right: auto;
-                width: 8em
-            }
-
+            
             p {
                 font-size: 12px;
                 color: darkgray;
@@ -47,15 +42,7 @@
             .eil2col {
                 width: 50%;
             }
-
-            .eil3col-1 {
-                width: 70%;
-            }
-
             .eil3col-2 {
-                display:flex;
-                flex-direction: column;
-                width: 30%;
             }
 
             .eil4col {
@@ -81,10 +68,6 @@
                 color: grey;
             }
 
-            .col {
-                float:left;
-            }
-
             .pirma {
                 background-color: grey;
             }
@@ -92,9 +75,7 @@
             .antra {
                 background-color: rgb(0, 255, 21);
             }
-            #picktext {
-                float:inline-end;
-            }
+
             .symbols {
                 list-style: none;
             }
@@ -105,7 +86,7 @@
 
     <body>
 
-        <div class='bodyclass'>
+        <div class='bodyclass clearfix'>
 
             <div id='eilute-1'>
                 
@@ -116,7 +97,7 @@
                 <!-- Eilute su stulpeliais  -->
                 <div class='row clearfix'>
                     
-                    <div class='col pirma'>
+                    <div class='pirma'>
 
                         <p>Stulpelis</p><br>
                         <p>Stulpelis</p><br>
@@ -126,7 +107,7 @@
 
                     </div>
 
-                    <div class='col antra'>
+                    <div class='antra'>
 
                         <p>Stulpelis</p> 
 
@@ -136,11 +117,11 @@
 
             </div>
 
-            <div id='eilute-2' class= 'clearfix'>
+            <div id='eilute-2'>
 
-                <div class= 'eil2col col'>
+                <div class= 'eil2col'>
 
-                    <h1 class='centered'>This is a Heading</h1>
+                    <h1>This is a Heading</h1>
                     <h2>This is a Heading</h2>
                     <h2>This is a Heading</h2>
                     <h3>This is a Heading</h3>
@@ -151,7 +132,7 @@
 
                 </div>
 
-                <div class= 'eil2col col'>
+                <div class= 'eil2col'>
 
                     <p>Vivamus magna justo, lacinia eget consectetur sed, 
                     convallis at tellus. <br> Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
@@ -175,15 +156,14 @@
 
             <div id='3-eilute'>
 
-                <div class = 'eil3col col clearfix eil3col-1'>
+                <div class = 'eil3col'>
                     <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2014%2F09%2Fgoogle-logo-1.png&f=1&nofb=1' alt='Pirmas paveiksliukas'>
                     <img src='https://assets.newatlas.com/dims4/default/b89cd58/2147483647/strip/true/crop/925x617+0+232/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fchandra-nasa-space-telescope-anniversary-4.jpg' alt='Antras paveiksliukas'>
                 </div>
 
-                <div class = 'eil3col col clearfix eil3col-2'>
+                <div class = 'eil3col'>
 
                     <img src='https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-morraine-lake.jpg' alt='trecias paveiksleis'>
-                    <span id='pictext'>Tekstas su zyma span</span>
 
                 </div>
 
@@ -191,7 +171,7 @@
 
             <div id='4-eilute'>
 
-                <div class = 'eil4col col'>
+                <div class = 'eil4col'>
 
                     <h1>Antra paskaita</h1>
                     <a href='https://google.lt' target='_blank'>Einame i Google Naujas Tab'as</a><br>
@@ -201,7 +181,7 @@
 
                 </div>
 
-                <div class = 'eil4col col clearfix'>
+                <div class = 'eil4col'>
 
                     <ol class = 'symbols'>
 
@@ -216,7 +196,7 @@
 
                 </div>
 
-                <div class = 'eil4col col clearfix'>
+                <div class = 'eil4col'>
 
                     <ul class = 'symbols'>
 
